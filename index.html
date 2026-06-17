@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Football Elite</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    background:#081018;
+    color:white;
+}
+
+
+nav{
+    position:fixed;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:rgba(0,0,0,.6);
+    backdrop-filter:blur(10px);
+    z-index:10;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#00ffcc;
+}
+
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1574629810360-7efbbe195018");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+
+.hero h1{
+    font-size:60px;
+}
+
+
+.hero p{
+    font-size:22px;
+    margin:20px;
+}
+
+
+.btn{
+    padding:15px 35px;
+    background:#00ffcc;
+    color:black;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+
+
+.matches{
+    padding:80px;
+}
+
+
+.matches h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+
+
+.cards{
+
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+
+}
+
+
+
+.card{
+
+    width:300px;
+    background:#111827;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 0 20px #00ffcc;
+
+}
+
+
+
+.teams{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+
+}
+
+
+
+.team-logo{
+
+    width:70px;
+    height:70px;
+    object-fit:contain;
+
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<nav>
+
+<div class="logo">⚽ FOOTBALL ELITE</div>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+<li><a href="#">Matches</a></li>
+<li><a href="#">Teams</a></li>
+<li><a href="#">News</a></li>
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+</nav>
+
+
+
+<section class="hero">
+
+<div>
+
+<h1>THE HOME OF FOOTBALL</h1>
+
+<p>
+Live Scores • Match Updates • Team Stats • Football News
+</p>
+
+<a class="btn" href="#">Explore Now</a>
+
+</div>
+
+</section>
+
+
+
+
+<section class="matches">
+
+
+<h2>Featured Matches</h2>
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+<div class="teams">
+
+<img src="barcelona.png" class="team-logo">
+
+<span>VS</span>
+
+<img src="realmadrid.png" class="team-logo">
+
+</div>
+
+<h3>Barcelona vs Real Madrid</h3>
+
+<p>Sunday - 9:00 PM</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<div class="teams">
+
+<img src="France.png" class="team-logo">
+
+<span>VS</span>
+
+<img src="Brazil.jpg" class="team-logo">
+
+</div>
+
+<h3>France vs Brazil</h3>
+
+<p>Saturday - 4:00 PM</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<div class="teams">
+
+<img src="Portugal.jpg" class="team-logo">
+
+<span>VS</span>
+
+<img src="Argentina.jpg" class="team-logo">
+
+</div>
+
+
+<h3>Portugal vs Argentina</h3>
+
+<p>Friday - 8:00 PM</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+</body>
+</html>
